@@ -26,10 +26,13 @@ class HomeController extends Controller
             return redirect()->back();
         }
     }
-    public function cancel_appoint()
+    public function cancel_appoint($id)
 
     {
-        
+        $data=appointment::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
 
 }
 
