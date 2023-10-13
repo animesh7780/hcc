@@ -29,6 +29,12 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 
+Route::get('/add_doctor_view',[AdminController::class,'addview']);
+
+
+
+
+
 
 
 
