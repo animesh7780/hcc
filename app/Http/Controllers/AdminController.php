@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    //
+    public function addview()
+    {
+
+
+        return view('admin.add_doctor');
+    }
 }
 
