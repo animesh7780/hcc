@@ -112,6 +112,28 @@
     </nav>
   </header>
 
+    
+  <div align="center" style="padding:70px;">
+      <table>
+          <tr style="background-color:black;">
+              <th style= "padding:10px;font-size:20px;color:white;">Doctor Name</th>
+              <th style= "padding:10px;font-size:20px;color:white;">Date</th>
+              <th style= "padding:10px;font-size:20px;color:white;">Message</th>
+              <th style= "padding:10px;font-size:20px;color:white;">Status</th>
+          </tr>
+
+          <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+          </tr>
+
+          
+      </table>
+  </div>
+
+
 
      
 
