@@ -41,5 +41,5 @@ Route::('/appointment',[Homecontroller::class,'appointment']);
 
 Route::get('/myappointment',[Homecontroller::class,'myappointment']);
 
-Route::get('/cancel_appoint',[Homecontroller::class,'cancel_appoint']);
+Route::get('/cancel_appoint/{id}',[Homecontroller::class,'cancel_appoint']);
 
