@@ -43,5 +43,10 @@ class AdminController extends Controller
 
 
     } 
+
+    public function showappointment()
+    {
+        return view('admin.showappointment');
+    }        
 }
 
