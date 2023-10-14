@@ -46,6 +46,15 @@
                         <th style="padding:10px">Image</th>
                        
                     </tr>
+                    @foreach($data as $doctor)
+                    <tr align="center" style="background-color:skyblue;">
+                        <td>{{$doctor->name}}</td>
+                        <td>{{$doctor->phone}}</td>
+                        <td>{{$doctor->speciality}}</td>
+                        <td>{{$doctor->room}}</td>
+                        <td><img height="100" width="100" src="doctorimage/{{$doctor->image}}"></td>
+                    </tr>
+                    @endforeach
                 </table>
                 
             </div>
