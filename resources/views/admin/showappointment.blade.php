@@ -61,7 +61,7 @@
                             <a class="btn btn-success" href="{{url('approved,$appoint->id)}}">Approved</a>
                         </td>
                         <td>
-                            <a class="btn btn-danger" href="">Canceled</a>
+                            <a class="btn btn-danger" href="{{url('canceled',$appoint->id)}}">Canceled</a>
                         </td>
                     </tr>
                     @endforeach
