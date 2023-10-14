@@ -43,12 +43,34 @@
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
 
+          
+          @if(session()->has('message'))
+
+          <div class="alert alert-success">
+
+            <button type="button"class="close" data-dismiss="alert">
+              x
+
+            </button>
+
+            {{session()->get('message')}}
+
+
+
+
+          </div>
+
+          @endif
+
+
 
       <div class="container" align="center" style="padding-top: 100px;">
-        <form>
+
+        <form action="{{url('upload_doctor')}}" method="POST" enctype="multipart/form-data">
+          @csrf
             <div style="padding:15px;">
                 <label>Doctor Name</label>
-                <input type="text" style="colour:black" name="name" placeholder="write the name">
+                <input type="text" style="colour:black" name="name" placeholder="write the name" required="">
 
 
             </div>
@@ -56,14 +78,14 @@
             <div style="padding:15px;">
 
                 <label>Phone</label>
-                <input type="number" style="colour:black" name="number" placeholder="write the number">
+                <input type="number" style="colour:black" name="number" placeholder="write the number" required="">
 
 
             </div>
             <div style="padding:15px;">
             
                 <label>Speaciality</label>
-                <select name="speaciality" style="colour:black; width: 200px;">
+                <select name="speaciality" style="colour:black; width: 200px;" required="">
                     <option>--Select--</option>
                     <option value="skin">skin</option>
                     <option value="heart">heart</option>
@@ -82,7 +104,7 @@
             
                 <label>Room No</label>
 
-                <input type="text" style="colour:black" name="name" placeholder="write the room number">
+                <input type="text" style="colour:black" name="name" placeholder="write the room number" required="">
 
 
             </div>
@@ -90,7 +112,7 @@
             <div style="padding:15px;">
             
                 <label>Doctor Image</label>
-                <input type="file" name="file">
+                <input type="file" name="file" required="">
 
 
             </div>
