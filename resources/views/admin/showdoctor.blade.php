@@ -33,7 +33,11 @@
       <!-- partial -->
       @include('admin.navbar')
         <!-- partial -->
-      
+        <div class="container-fluid page-body-wrapper">
+            <div align="center" style="padding-top:100px;">
+                
+            </div>
+        </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
     @include('admin.script')
