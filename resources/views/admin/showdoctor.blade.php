@@ -46,6 +46,7 @@
                         <th style="padding:10px">Image</th>
                        
                     </tr>
+                </table>
                 
             </div>
         </div>
