@@ -58,5 +58,13 @@ class AdminController extends Controller
         $data->save();
         return redirect()->back();
     }
+
+    public function canceled($id)
+    {
+        $data=appointment::find($id);
+        $data->status='canceled';
+        $data->save();
+        return redirect()->back();
+    }
 }
 
