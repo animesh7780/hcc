@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Models\Doctor;
 
+use App\Models\Appointment;
+
 class AdminController extends Controller
 {
     public function addview()
@@ -46,7 +48,8 @@ class AdminController extends Controller
 
     public function showappointment()
     {
-        return view('admin.showappointment');
+            $data=appointment::all();
+        return view('admin.showappointment',compact('data'));
     }        
 }
 
