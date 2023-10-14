@@ -35,6 +35,17 @@
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
             <div align="center" style="padding-top:100px;">
+
+                <table>
+                    <tr style= "background-color:black;">
+                        
+                        <th style="padding:10px">Doctor Name</th>
+                        <th style="padding:10px">Phone</th>
+                        <th style="padding:10px">Speciality</th>
+                        <th style="padding:10px">Room No</th>
+                        <th style="padding:10px">Image</th>
+                       
+                    </tr>
                 
             </div>
         </div>
