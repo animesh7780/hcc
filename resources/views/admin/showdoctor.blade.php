@@ -44,6 +44,8 @@
                         <th style="padding:10px">Speciality</th>
                         <th style="padding:10px">Room No</th>
                         <th style="padding:10px">Image</th>
+                        <th style="padding:10px">Delete</th>
+                        <th style="padding:10px">Update</th>
                        
                     </tr>
                     @foreach($data as $doctor)
@@ -53,6 +55,8 @@
                         <td>{{$doctor->speciality}}</td>
                         <td>{{$doctor->room}}</td>
                         <td><img height="100" width="100" src="doctorimage/{{$doctor->image}}"></td>
+                        <td><a class="btn btn-danger" href="{{url('deletedoctor',$doctor->id)}}">Delete</a></td>
+                        <td><a class="btn btn-primary" href="">Update</a></td>
                     </tr>
                     @endforeach
                 </table>
