@@ -72,5 +72,10 @@ class AdminController extends Controller
         $data = doctor::all();
         return view('admin.showdoctor',compact('data'));
     }
+
+    public function emailview($id)
+    {
+        return view('admin.email_view');
+    }
 }
 
