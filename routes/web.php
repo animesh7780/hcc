@@ -59,4 +59,5 @@ Route::get('/canceled/{id}',[Admincontroller::class,'canceled']);
 Route::get('/showdoctor',[Homecontroller::class,'showdoctor']);
 
 Route::get('/emailview/{id}',[Admincontroller::class,'emailview']);
+Route::get('/deletedoctor/{id}',[Admincontroller::class,'deletedoctor']);
 
