@@ -77,5 +77,10 @@ class AdminController extends Controller
     {
         return view('admin.email_view');
     }
+    public function deletedoctor($id)
+    {
+        $data=doctor::find($id);
+        $data->delete();
+        return redirect()->back();
 }
 
