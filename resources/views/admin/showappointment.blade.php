@@ -66,7 +66,7 @@
                         </td>
 
                          <td>
-                            <a class="btn btn-primary" href="{{url('canceled',$appoint->id)}}">Send Mail</a>
+                            <a class="btn btn-primary" href="{{url('emailview',$appoint->id)}}">Send Mail</a>
                         </td>
                     </tr>
                     @endforeach
