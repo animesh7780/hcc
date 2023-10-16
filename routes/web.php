@@ -58,7 +58,9 @@ Route::get('/canceled/{id}',[Admincontroller::class,'canceled']);
 
 Route::get('/showdoctor',[Admincontroller::class,'showdoctor']);
 
+Route::get('/showdoctor',[Admincontroller::class,'showdoctor']);
+
 Route::get('/emailview/{id}',[Admincontroller::class,'emailview']);
 Route::get('/deletedoctor/{id}',[Admincontroller::class,'deletedoctor']);
 
-Route::get('/updatedoctor/{id}',[Admincontroller::class,'updatedoctor']);
+Route::get('/editdoctor/{id}',[Admincontroller::class,'editdoctor']);
