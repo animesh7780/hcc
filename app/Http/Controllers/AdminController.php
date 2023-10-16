@@ -101,7 +101,7 @@ class AdminController extends Controller
         if($image)
         {    
         
-$imagename=time().'.'.$image->getOriginalClientExtension();
+$imagename=time().'.'.$image->getClientOriginalExtension();
         $request->file->move('doctorimage',$imagename);
         $doctor->imaage=$imagename;
     }
