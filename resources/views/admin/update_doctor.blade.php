@@ -27,7 +27,10 @@
       @include('admin.navbar')
         <!-- partial -->
        <div class="container-fluid page-body-wrapper">
-           @if(session()->has('message'))
+           
+        
+           <div class="container" align="center" style="padding:100px">
+               @if(session()->has('message'))
            <div class="alert alert-success">
 
             <button type="button"class="close" data-dismiss="alert">
@@ -43,8 +46,6 @@
           </div>
 
           @endif
-        
-           <div class="container" align="center" style="padding:100px">
                <form action="{{url('editdoctor',$data->id)}}" method="POST" enctype="multipart/form-data"> 
                    @csrf
                    <div style="padding:15px;">
