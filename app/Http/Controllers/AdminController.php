@@ -82,5 +82,11 @@ class AdminController extends Controller
         $data=doctor::find($id);
         $data->delete();
         return redirect()->back();
+    }
+
+    public function updatedoctor()
+    {
+        return view('admin.update_doctor')
+    }
 }
 
