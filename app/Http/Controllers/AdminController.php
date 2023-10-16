@@ -106,7 +106,7 @@ $imagename=time().'.'.$image->getClientOriginalExtension();
         $doctor->imaage=$imagename;
     }
         $doctor->save();
-        return redirect()->back();
+        return redirect()->back()->with('message','Doctor Details Updated Successfully');
     }
 }
 
